@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.city {
+		  background-color: black;
+		  color: white;
+		  margin: 20px;
+		  padding: 20px;
+		} 
+	</style>
+
+	<script>
+		function openCity(evt, cityName) {
+		  var i, x, tablinks;
+		  x = document.getElementsByClassName("city");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablink");
+		  for (i = 0; i < x.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " w3-red";
+		}
+	</script>
+
+	<div class="w3-bar w3-black">
+	  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+	</div>
+</head>
+
+<nav>
+
+</nav>
+
+<body>
+	<div id="London" class="city">
+	  <h2>London</h2>
+	  <p>London is the capital of England.</p>
+	</div>
+
+	<div id="Paris" class="city" style="display:none">
+	  <h2>Paris</h2>
+	  <p>Paris is the capital of France.</p> 
+	</div>
+
+	<div id="Tokyo" class="city" style="display:none">
+	  <h2>Tokyo</h2>
+	  <p>Tokyo is the capital of Japan.</p>
+	</div>
+</body>
+</html>
