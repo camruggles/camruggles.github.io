@@ -1,0 +1,49 @@
+Me:
+I am Cameron Ruggles
+I am an undergraduate at Purdue University
+
+I am a Computer Science student with a Math minor.
+
+I'm really interested in math and I think there is a certain beauty in developing the geometric intuition behind ML techniques we know (the proof of Linear Least Squares Regression by using it's implicit orthogonality properties comes to mind)
+
+I am increasingly interested in the thin intersection between Computer Science and Electrical Engineering.
+In November 2019 I will be applying for PhD programs that focus on (Medical) Image Analysis and Computer Vision.
+
+I've recently been trying to read about Convolutional Nets, Unsupervised Deep Learning techniques, and Regression.
+(My current mini goal is to learn some Unsupervised DL algorithms and apply them to Medical Image Challenges)
+
+I owe a great many thanks to Prof David Gleich and his graduate students at Purdue University, who have encouraged my interest in research and who have been patiently helping me overcome my lack of experience and direction.  I worked on a project with D. Gleich and Nate Veldt (website link) involving parallelizing some Graph Clustering techniques.  We have written a paper over this work and are currently working to submit it to different conferences.
+Here is the arxiv link for those interested.
+Short Summary: In metric constrained optimization, it is possible to update multiple variables at a time without violating constraints or correctness.  I found a method that can handle O(n) variable updates at the same time, out of O(n^3) variable updates in total.
+This work has certainly sparked my interest in research, and as I expand my mathematical ability beyond that of an undergraduate, I hope to be able to tackle more challenging research contributions.
+My current objective is to study statistics, algebraic topology, and DSP and then review the literature on Medical Image Analysis and Model Based Image Reconstructions.
+
+Not Academics:
+Outside of school, I'm interested in nutrition, and have taken Purdue's NUTR 303.
+Every once in a while I try my hand at drawing and have been following along in "The Keys to Drawing" by Bert Dodson.
+
+Resume
+
+Course Listing
+classes I have enjoyed:
+
+Discrete Mathematics for Computer Science Majors (CS 182)
+Analysis of Algorithms (CS 381)
+Computer Architecture (CS 251)
+Machine Learning (CS 373)
+
+Linear Algebra (MA 353)
+Probability (MA 416)
+Differential Equations (MA 366)
+Real Analysis (MA 341)
+
+Programming Languages:
+Julia - I used Julia for all of my research under Prof David Gleich.  It was his group that introduced me to this language.
+	I am thankful for this, as I vastly prefer Julia to Matlab or Python with regards to scientific computing.
+	The Julia language is unparalleled in it's handling of matrices.
+
+Python - I used Python for my Machine Learning class and my recent ventures in
+	Unsupervised Deep Learning and Linear Programming, as well as for my internship.
+Java/C - I have used these languages for the majority of my classes.
+
+Matlab - I have not used this yet but next semester 3 of my classes will be using MATLAB so I imagine I'll be pretty well versed soon.

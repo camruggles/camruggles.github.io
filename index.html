@@ -1,110 +1,44 @@
 <!DOCTYPE html>
 <html>
-<title>Cameron Ruggles</title>
+<body style="padding-top: 0px">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <!-- <img src="/w3images/avatar_smoke.jpg" style="width:100%"> -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#bio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>BIO</p>
-  </a>
-</nav>
+<div>
+	<img src="./cameronruggles.jpg" align="left" alt="supposed to be a picture of me" width="320px" height="240px" style="transform: rotate(270deg); float: left; padding-bottom:100px; padding-right:10px">
+		<h1>Cameron Ruggles</h1>
+		<p>Purdue University, Computer Science</p>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a> -->
-    <a href="#bio" class="w3-bar-item w3-button" style="width:25% !important">BIO</a>
-  </div>
+	<h2>My Academic Experience</h2>
+	<p>
+		I owe a great many thanks to <a href="https://www.cs.purdue.edu/homes/dgleich/">Prof David Gleich</a> and his graduate students at Purdue University, who have encouraged my interest in research and who have been patiently helping me get off the ground.  
+
+		I worked on a project with D. Gleich and  <a href="https://www.math.purdue.edu/~lveldt/">Nate Veldt</a> involving parallelizing some Graph Clustering techniques.  We have written a paper over this work and are currently working to submit it to different conferences.<br /><br />
+
+		Link: <a href="https://arxiv.org/abs/1901.10084">https://arxiv.org/abs/1901.10084 </a><br />
+		Code: <a href="https://github.com/camruggles/ParallelDykstras">https://github.com/camruggles/ParallelDykstras</a> <br /><br />
+
+		Short Summary: In metric constrained optimization, it is possible to update multiple variables at a time without violating constraints or correctness.  I found a method that can handle O(n) variable updates at the same time, out of O(n^3) variable updates in total.<br />
+
+
+		Before this I had done some work on simulating second order markov chains on large social networks, and trying to find ways to figure out network separation of a mixed Erdos Renyi and Barabasi Albert graph.
+		<br />
+	</p>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo">Cameron Ruggles</h1>
-    <p> Computer Science, Purdue University</p>
-    <!-- <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Academic Experience</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      
-I'm really interested in math and I think there is a certain beauty in developing the geometric intuition behind ML techniques we know (the proof of Linear Least Squares Regression by using it's implicit orthogonality properties comes to mind)<br /><br />
-
-I am increasingly interested in the thin intersection between Computer Science and Electrical Engineering.<br />
-In November 2019 I will be applying for PhD programs that focus on (Medical) Image Analysis and Computer Vision.<br /><br />
-
-I've recently been trying to read about Convolutional Nets, Unsupervised Deep Learning techniques, and Regression.<br />
-(My current mini goal is to learn some Unsupervised DL algorithms and apply them to Medical Image Challenges)<br /><br />
-
-I owe a great many thanks to Prof David Gleich and his graduate students at Purdue University, who have encouraged my interest in research and who have been patiently helping me overcome my lack of experience and direction.  I worked on a project with D. Gleich and Nate Veldt (website link) involving parallelizing some Graph Clustering techniques.  We have written a paper over this work and are currently working to submit it to different conferences.<br /><br />
-Here is the arxiv link for those interested. https://arxiv.org/abs/1901.10084<br /><br />
-Short Summary: In metric constrained optimization, it is possible to update multiple variables at a time without violating constraints or correctness.  I found a method that can handle O(n) variable updates at the same time, out of O(n^3) variable updates in total.<br />
-This work has certainly sparked my interest in research, and as I expand my mathematical ability beyond that of an undergraduate, I hope to be able to tackle more challenging research contributions.<br /><br />
-My current objective is to study statistics, algebraic topology, and DSP and then review the literature on Medical Image Analysis and Model Based Image Reconstructions.
-<br />
-    </p>
-
-    </div>
-
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="bio">
-    <h2 class="w3-text-light-grey">Non Academics</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-        Outside of school, I'm interested in nutrition, and have taken Purdue's NUTR 303.
-Every once in a while I try my hand at drawing and have been following along in "The Keys to Drawing" by Bert Dodson.
-
-    </p>
-
-  </div>
-
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge" >
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
+<div>
+	<h2>Internship</h2>
+	<p>
+		 During the Summer of 2019, I worked at a company called Ciholas.  They are in the space of Ultra Wideband Networks.  My job was to implement and tweak filtering algorithms in Python to enhance sensor position data.  This involved quickly getting up to speed on multivariate gaussian distributions.  The resulting filters demonstrated better latency compared to previous, less sophisticated filters and significant improvement in location accuracy over raw data.
+	</p>
 </div>
+
+<div>
+	<h2>Other</h2>
+	<p>
+		 My PR for running one mile is 6:30.  This is clearly more important than research experience.
+	</p>
+</div>
+
 
 </body>
 </html>
