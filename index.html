@@ -2,171 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cameron Ruggles</title>
-
-  <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
-
   <style>
-    /* Reset & base */
+    /* Base reset */
     * {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       box-sizing: border-box;
     }
+    html, body {
+      height: 100%;
+    }
+
+    /* Purple gradient background */
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+      position: relative;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* SVG wave at bottom */
+    /* .background-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 200px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff33' fill-opacity='0.3' d='M0,224L48,218.7C96,213,192,203,288,176C384,149,480,107,576,117.3C672,128,768,192,864,218.7C960,245,1056,235,1152,197.3C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") 
+                  repeat-x bottom;
+      transform: translateX(-25%);
+      z-index: 0;
+    } */
+
+    .background-wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff33' fill-opacity='0.3' d='M0,224L48,218.7C96,213,192,203,288,176C384,149,480,107,576,117.3C672,128,768,192,864,218.7C960,245,1056,235,1152,197.3C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: repeat;
+        background-position: top left;
+        background-size: auto;
+        z-index: 0;
+        }
+
+
+    /* Main content container */
+    .content {
+      position: relative;
+      z-index: 1;
+      min-height: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 2rem;
     }
-    .container {
-      max-width: 800px;
-      width: 100%;
-    }
 
-    /* Headings */
     h1 {
-      text-align: center;
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.8);
       margin-bottom: 2rem;
-    }
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 600;
-      margin: 3rem 0 1.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
 
-    /* Project cards */
-    .project {
-      background-color: #1e1e1e;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2.5rem;
-      line-height: 1.6;
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
     }
-
-    /* Links */
-    .project a {
-      color: #61dafb;
+    .button-row a {
+      padding: 0.75rem 1.5rem;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
       text-decoration: none;
+      font-size: 1rem;
+      border: 2px solid rgba(255,255,255,0.6);
+      border-radius: 4px;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    /* Paragraph spacing */
-    .project p + p {
-      margin-top: 1rem;
+    .button-row a:hover {
+      background: rgba(255,255,255,0.4);
+      transform: translateY(-2px);
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
+  <div class="background-wave"></div>
+  <div class="content">
     <h1>Cameron Ruggles</h1>
+    <img
+      src="./yosemite.jpg"
+      alt="Cameron Ruggles"
+      class="profile-pic"
+    />
 
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Parallel Dykstras</h3>
-      <p>
-        <strong>Link:</strong>
-        <a href="https://arxiv.org/abs/1901.10084" target="_blank"
-          >arxiv.org/abs/1901.10084</a
-        ><br />
-        <strong>Code:</strong>
-        <a href="https://github.com/camruggles/ParallelDykstras" target="_blank"
-          >github.com/camruggles/ParallelDykstras</a
-        >
-      </p>
-      <p>
-		Short Summary: In metric constrained optimization, it is possible to update multiple variables at a time without violating constraints or correctness.  
-		I found a method that can handle O(n) variable updates at the same time, out of O(n^3) variable updates in total.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>ActionFormer Research</h3>
-      <p>
-        <strong>Code:</strong>
-        <a
-          href="https://github.com/camruggles/Action-Former-Feature-Extraction"
-          target="_blank"
-          >github.com/camruggles/Action-Former-Feature-Extraction</a
-        >
-      </p>
-      <p>Write-up coming soon.</p>
-    </div>
-
-    <div class="project">
-      <h3>LP Dieting</h3>
-      <p>
-        <strong>Code:</strong>
-        <a href="https://github.com/camruggles/LP-Dieting" target="_blank"
-          >github.com/camruggles/LP-Dieting</a
-        >
-      </p>
-      <p>
-        I pulled nutrition-label data via API and formulated an LP to compute
-        mathematically optimal diets—but I wouldn’t actually recommend following
-        it in real life.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>StereoVision</h3>
-      <p>
-        <strong>Code:</strong>
-        <a
-          href="https://github.com/camruggles/NoCalibrationStereoVision"
-          target="_blank"
-          >github.com/camruggles/NoCalibrationStereoVision</a
-        >
-      </p>
-      <p>
-        Classical stereo pipelines need painstaking calibration. This explores
-        estimating the fundamental matrix (and decomposing it into camera
-        matrices) to triangulate 3D points—next up: RANSAC or SuperPoint/SuperGlue
-        to improve point matches, then weighting neural refinements.
-      </p>
-
-      
-    </div>
-
-    <div class="project">
-            <h3> CUDA K Means </h3>
-        <p>
-            <strong>Code:</strong>
-            <a
-            href="https://github.com/camruggles/cuda_kmeans "
-            target="_blank"
-            >https://github.com/camruggles/cuda_kmeans </a
-            >
-        </p>
-
-        <p>
-            This is an implementation of k means clustering in CUDA.
-            It shows 100x speedup over some open source implementations and a regular C implementation.
-            <br />
-            <br />
-        </p>
-
+    <div class="button-row">
+      <a href="./projects.html">Projects</a>
+      <!-- <a href="project.html">Page 2</a>
+      <a href="project.html">Page 3</a>
+      <a href="project.html">Page 4</a>
+      <a href="project.html">Page 5</a> -->
     </div>
   </div>
 </body>
 </html>
-
-

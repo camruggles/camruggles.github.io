@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cameron Ruggles</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 3rem 0 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Project cards */
+    .project {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    /* Links */
+    .project a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* Paragraph spacing */
+    .project p + p {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cameron Ruggles</h1>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Parallel Dykstras</h3>
+      <p>
+        <strong>Link:</strong>
+        <a href="https://arxiv.org/abs/1901.10084" target="_blank"
+          >arxiv.org/abs/1901.10084</a
+        ><br />
+        <strong>Code:</strong>
+        <a href="https://github.com/camruggles/ParallelDykstras" target="_blank"
+          >github.com/camruggles/ParallelDykstras</a
+        >
+      </p>
+      <p>
+		Short Summary: In metric constrained optimization, it is possible to update multiple variables at a time without violating constraints or correctness.  
+		I found a method that can handle O(n) variable updates at the same time, out of O(n^3) variable updates in total.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>ActionFormer Research</h3>
+      <p>
+        <strong>Code:</strong>
+        <a
+          href="https://github.com/camruggles/Action-Former-Feature-Extraction"
+          target="_blank"
+          >github.com/camruggles/Action-Former-Feature-Extraction</a
+        >
+      </p>
+      <p>Write-up coming soon.</p>
+    </div>
+
+    <div class="project">
+      <h3>LP Dieting</h3>
+      <p>
+        <strong>Code:</strong>
+        <a href="https://github.com/camruggles/LP-Dieting" target="_blank"
+          >github.com/camruggles/LP-Dieting</a
+        >
+      </p>
+      <p>
+        I pulled nutrition-label data via API and formulated an LP to compute
+        mathematically optimal diets—but I wouldn’t actually recommend following
+        it in real life.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>StereoVision</h3>
+      <p>
+        <strong>Code:</strong>
+        <a
+          href="https://github.com/camruggles/NoCalibrationStereoVision"
+          target="_blank"
+          >github.com/camruggles/NoCalibrationStereoVision</a
+        >
+      </p>
+      <p>
+        Classical stereo pipelines need painstaking calibration. This explores
+        estimating the fundamental matrix (and decomposing it into camera
+        matrices) to triangulate 3D points—next up: RANSAC or SuperPoint/SuperGlue
+        to improve point matches, then weighting neural refinements.
+      </p>
+
+      
+    </div>
+
+    <div class="project">
+            <h3> CUDA K Means </h3>
+        <p>
+            <strong>Code:</strong>
+            <a
+            href="https://github.com/camruggles/cuda_kmeans "
+            target="_blank"
+            >https://github.com/camruggles/cuda_kmeans </a
+            >
+        </p>
+
+        <p>
+            This is an implementation of k means clustering in CUDA.
+            It shows 100x speedup over some open source implementations and a regular C implementation.
+            <br />
+            <br />
+        </p>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
